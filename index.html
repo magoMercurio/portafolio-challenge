@@ -36,9 +36,9 @@
                 </p>
                 <ul class="presentation-socialMedia">
                     <li class="presentation-socialMedia__item"> <a href="https://github.com/magoMercurio" target="_blank" rel="noopener noreferrer">Github</a></li>
-                    <li class="presentation-socialMedia__item" target="_blank" rel="noopener noreferrer"><a href="https://www.linkedin.com/in/rauldavilaf/">Linkedin</a></li>
-                    <li class="presentation-socialMedia__item" target="_blank" rel="noopener noreferrer"> <a href="https://twitter.com/mago_d_Mercurio">Twitter</a></li>
-                    <li class="presentation-socialMedia__item"> <button  class="btn">Curriculum</button> </li>
+                    <li class="presentation-socialMedia__item" ><a href="https://www.linkedin.com/in/rauldavilaf/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                    <li class="presentation-socialMedia__item"> <a href="https://twitter.com/mago_d_Mercurio"  target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li class="presentation-socialMedia__item"> <a href="https://github.com/magoMercurio" target="_blank" rel="noopener noreferrer" class="presentation-btn">Curriculum</a> </li>
                 </ul>
             </div>
             <div class="presentation-contain__img"></div>
@@ -76,8 +76,8 @@
             <h2>Formación académica</h2>
             <div class="formation-container">
                 <div class="formation-contain">
-                    <picture class="formation-contain__img"><img src="./assets/img/alura.png" alt=""></picture>
-                    <p>formation Front-End</p>
+                    <picture class="formation-contain__pic"><img src="./assets/img/alura.png" alt=""></picture>
+                    <p>Formación Front-End</p>
                     <span>en curso - Alura</span>
                 </div>
             </div>
@@ -89,41 +89,48 @@
                     <p class="proyect-description__title">Encriptador de Texto</p>
                     <span class="proyect-description__subtitle">Challenge Oracle | Alura</span>
                     <div class="proyect-description-btnContainer">
-                        <a class="proyect-description__btn repo" href="http://google.com">Repositorio</a>
-                        <a class="proyect-description__btn demo" href="http://bing.com">Ver demo</a>
+                        <a class="btnRepo" href="https://github.com/magoMercurio/encriptador-js" target="_blank" rel="noopener noreferrer">Repositorio</a>
+                        <a class="btnDemo " href="https://magomercurio.github.io/encriptador-js/" target="_blank" rel="noopener noreferrer">Ver Demo</a>
                     </div>
                 </div>
+                <picture class="proyect-description__pic">
+                    <img src="./assets/img/imgencriptadorjs.png" alt="">
+                </picture>
             </div>
         </section>
         <section class="contact container">
-            <picture><img src="./assets/img/contact.jpeg" alt=""></picture>
             <div class="contact-container">
-                <h2>Contacto</h2>
-                <p>¿Quieres contactarme? <br>
-                    Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-                    <form>
-                        <fieldset>
-                            <div class="input-container">
-                                <label class="input-label" for="name">Nombre</label>
-                                <input name="name" type="text" class="input" placeholder="juan perez">
+                <div class="contact-img"></div>
+                <div class="contact-contain">
+                    <h2>Contacto</h2>
+                    <p>¿Quieres contactarme? <br>
+                        Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                        <form>
+                            <fieldset>
+                                <div class="input-contain">
+                                    <label class="input-label" for="name">Nombre</label>
+                                    <input name="name" type="text" class="input" placeholder="juan perez">
+                                    
                                 
-                            
-                            </div>
-                            <div class="input-container">
-                                <label class="input-label" for="email">Email</label>
-                                <input name="email" type="email" class="input" placeholder="correo@mail.com">
-                            </div>
-                            <div class="input-container">
-                                <label class="input-label" for="asunto">Asunto</label>
-                                <input name="asunto" type="text" class="input" placeholder="Asunto" maxlength="20">
-                            </div>
-                            <div class="input-container">
-                            <textarea class="input-container" name="textarea" id="textarea" placeholder="Mensaje" cols="30" rows="10"></textarea>
-                            </div>
-                            
-                        </fieldset>
-                    </form>
+                                </div>
+                                <div class="input-contain">
+                                    <label class="input-label" for="email">Email</label>
+                                    <input name="email" type="email" class="input" placeholder="correo@mail.com">
+                                </div>
+                                <div class="input-contain">
+                                    <label class="input-label" for="asunto">Asunto</label>
+                                    <input name="asunto" type="text" class="input" placeholder="Asunto" maxlength="20">
+                                </div>
+                                <div class="input-contain">
+                                <textarea class="input-container" name="textarea" id="textarea" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                                </div>
+                                
+                            </fieldset>
+                        </form>
+                        
+                </div>
             </div>
+            
         </section>
     </main>
     <footer>
