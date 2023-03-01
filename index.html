@@ -101,41 +101,42 @@
         <section class="contact container">
             <div class="contact-container">
                 <div class="contact-img"></div>
+                <div class=""></div>
                 <div class="contact-contain">
-                    <h2>Contacto</h2>
-                    <p>¿Quieres contactarme? <br>
-                        Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-                        <form>
-                            <fieldset>
-                                <div class="input-contain">
+                    <div class="contact-contain__title">
+                        <h2>Contacto</h2>
+                        <p>¿Quieres contactarme? <br>
+                            Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                    </div>
+                
+                        <form class="contact-form">
+                                <div class="input">
+                                    <input class="input-field" name="name" type="text" class="input" placeholder="juan perez">
                                     <label class="input-label" for="name">Nombre</label>
-                                    <input name="name" type="text" class="input" placeholder="juan perez">
-                                    
-                                
                                 </div>
-                                <div class="input-contain">
+                                <div class="input">
+                                    <input class="input-field" name="email" type="email" class="input" placeholder="correo@mail.com" required>
                                     <label class="input-label" for="email">Email</label>
-                                    <input name="email" type="email" class="input" placeholder="correo@mail.com">
                                 </div>
-                                <div class="input-contain">
+                                <div class="input">
+                                    <input class="input-field" name="asunto" type="text" class="input" placeholder="Asunto" maxlength="20">
                                     <label class="input-label" for="asunto">Asunto</label>
-                                    <input name="asunto" type="text" class="input" placeholder="Asunto" maxlength="20">
                                 </div>
-                                <div class="input-contain">
-                                <textarea class="input-container" name="textarea" id="textarea" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                                <div class="input">
+                                <textarea class="input-textArea input-field" name="textarea" id="textarea" placeholder="Mensaje" cols="auto" rows="auto"></textarea>
                                 </div>
-                                
-                            </fieldset>
+                                <div class="contact-btn">
+                                    <a class="btn-action" href="#">Enviar</a>
+                                </div>
                         </form>
-                        
+                      
                 </div>
             </div>
-            
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>
-            desarrollado por Raul Davila
+            desarrollado por Raul Davila.  2023
         </p>
     </footer>
 </body>
