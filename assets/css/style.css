@@ -154,7 +154,7 @@ header {
     width: 25%;
     height: 350px;
     min-width: 320px;
-    background-image: url("/assets/img/profile.webp");
+    background-image: url("./assets/img/profile.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
