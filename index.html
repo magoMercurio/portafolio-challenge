@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tablet.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
     <title>Raul Davila Portafolio</title>
 </head>
 <body>
@@ -17,12 +20,12 @@
         </div>
         <nav class="header-nav">
             <ul class="header-nav-container">
-                <li class="header-nav-container__item">Sobre mi</li>
-                <li class="header-nav-container__item">Skills</li>
-                <li class="header-nav-container__item">Hobbies</li>
-                <li class="header-nav-container__item">formación</li>
-                <li class="header-nav-container__item">Proyectos</li>
-                <li class="header-nav-container__item">email@correo.com</li>
+                <li class="header-nav-container__item hidden">Sobre mi</li>
+                <li class="header-nav-container__item hidden">Skills</li>
+                <li class="header-nav-container__item hidden" >Hobbies</li>
+                <li class="header-nav-container__item hidden">formación</li>
+                <li class="header-nav-container__item hidden">Proyectos</li>
+                <li class="header-nav-container__item"> <a href="mailto:email@correo.com">email@correo.com</a></li>
             </ul>
         </nav>
     </div>
@@ -121,7 +124,7 @@
                 
                         <form class="contact-form">
                                 <div class="input">
-                                    <input class="input-field" name="name" type="text" class="input" placeholder="juan perez">
+                                    <input class="input-field" name="name" type="text" class="input" placeholder="juan perez" required>
                                     <label class="input-label" for="name">Nombre</label>
                                 </div>
                                 <div class="input">
@@ -129,17 +132,16 @@
                                     <label class="input-label" for="email">Email</label>
                                 </div>
                                 <div class="input">
-                                    <input class="input-field" name="asunto" type="text" class="input" placeholder="Asunto" maxlength="20">
+                                    <input class="input-field" name="asunto" type="text" class="input" placeholder="Asunto" maxlength="20" required>
                                     <label class="input-label" for="asunto">Asunto</label>
                                 </div>
                                 <div class="input">
-                                <textarea class="input-textArea input-field" name="textarea" id="textarea" placeholder="Mensaje" cols="auto" rows="auto"></textarea>
+                                <textarea class="input-textArea input-field" name="textarea" id="textarea" placeholder="Mensaje" cols="auto" rows="auto" required></textarea>
                                 </div>
                                 <div class="contact-btn">
                                     <a class="btn-action" href="#">Enviar</a>
                                 </div>
                         </form>
-                      
                 </div>
             </div>
         </section>

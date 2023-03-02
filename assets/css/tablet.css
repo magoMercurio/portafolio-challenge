@@ -1,0 +1,203 @@
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 26px;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 26px
+    }
+
+    .header-container {
+        padding: 16px 32px 16px 32px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .presentation-container {
+        padding: 32px;
+    }
+
+    .presentation-contain {
+        padding: 0px;
+        gap: 8px;
+    }
+
+    .presentation-contain__p {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 19px;
+    }
+    
+    .presentation-socialMedia__item {
+        padding: 0px;
+        gap: 4px;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+    .presentation-socialMedia__item a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    
+    }
+    
+    .presentation-contain__img {
+        width: 146px;
+        height: 146px;
+    }
+
+    .about-contain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .about p {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 16px;
+    }
+
+    .skill-container {
+        max-width: 768px;
+        padding: 32px;
+    }
+
+    .skills-contain {
+        width: 704px;
+        gap: 16px;
+    }
+
+    .skill-contain__item img{
+        width: 224px;
+        height: 222px;
+    }
+
+    .hobbies-container {
+        width: 768px;
+        padding: 32px;
+    }
+
+    .hobbies-contain {
+        width: 704px;
+    }
+
+    .hobbies-contain__item img {
+        width: 224px;
+        height: 222px;
+    }
+
+    .formation-container {
+        width: 704px;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .formation-contain {
+        width: 224px;
+        height: 169px;
+    }    
+
+    .formation-contain__pic {
+        padding: 16px;
+        gap: 10px;
+        width: 224px;
+        height: 118px;
+    }
+    .formation-contain__pic img {
+        width: 70px;
+        height: 48px;
+    }
+
+    .formation-contain p {
+        font-size: 1.6rem;
+        line-height: 19px;
+    }
+    
+    .formation-contain span {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 16px;
+    }
+
+    .proyect-container {
+        
+        padding: 32px;
+    }
+
+    .proyect-contain {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .proyect-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0px;
+        gap: 8px;
+        width: 704px;
+    }
+
+    .proyect-description__title {
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 19px;
+    }
+    
+    .proyect-description__subtitle {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 16px;
+    }
+    
+    .proyect-description-btnContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start ;
+        align-items: flex-start ;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .contact {
+        gap: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+    }
+
+    .contact-img {
+        display: none;
+    }
+
+    .contact-contain {
+        gap: 8px;
+    }
+    
+    .contact-form {
+        max-width: 704px;
+    }
+
+
+    .footer {
+        width: 100vmax;
+    }
+
+}

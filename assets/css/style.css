@@ -18,17 +18,36 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 32px 0 32px 0;
+    align-items: center;
+    justify-content: center;
+    width: 100vmax;
     
+}
+
+h1 {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 61px;
+    text-align: left;
+    
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
 }
 
 .header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 1200px;
+    align-items: center;
+    width: 100%;
+    max-width: 1136px;
+    padding: 16px 0 16px 0;
+    gap: 32px;
+    
     
 }
 
@@ -50,13 +69,26 @@ header {
 .header-nav-container {
     display: flex;
     flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
     
 }
 
 .header-nav-container__item {
     list-style: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 5px;
+}
+.header-nav-container__item a {
+    text-decoration: none;
+    color: #0066CC;
+    cursor: pointer;
+}
+
+.header-nav-container__item a:hover {
+    color:crimson;
 }
 
 
@@ -65,20 +97,23 @@ header {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100vmax;
 }
 
-.presentation {   
-    width: 100%;
-}
+
 
 .presentation-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
-    padding: 60px;
+    max-width: 1136px;
+    padding: 32px;
+    gap: 32px;
 }
 
 
@@ -86,21 +121,18 @@ header {
     width: 75%;
     display: flex;
     flex-direction: column;
-    padding-right: 5px;
+    align-items: flex-start;
+    gap: 24px;
+
     
 }
 
-.presentation-contain__h1 {
-    font-size: 5.2rem;
-    font-weight: 700;
-    text-align: left;
-    
-}
 
 .presentation-contain__p {
     font-size: 2.2rem;
     text-align: left;
     font-weight: 400;
+    line-height: 26px;
 }
 
 .presentation-contain .presentation-socialMedia {
@@ -108,6 +140,7 @@ header {
     flex-direction: row;
     align-items: center;
     list-style: none;
+    gap: 32px;
     
 }
 
@@ -119,6 +152,9 @@ header {
 
 .presentation-socialMedia__item a {
     text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 
 }
 
@@ -126,7 +162,7 @@ header {
 
     font-family: Roboto, sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
     background-color: #0066CC;
     padding: 10px 30px;
@@ -156,9 +192,8 @@ header {
 
 
 .presentation-contain__img {
-    width: 25%;
-    height: 350px;
-    min-width: 320px;
+    width: 368px;
+    height: 368px;
     background-image: url("../img/profile.webp");
     background-size: cover;
     background-position: center;
@@ -170,28 +205,20 @@ header {
 .about {
     flex-direction: column;
     justify-content: center;
-    padding: 60px;
+    padding: 32px;
+    gap: 10px;
     background-color: #EAF2FD;
-    width: 100%;
-
 }
 
 .about-contain {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1440px;
-    min-width: 500px;
-    margin: 10px auto;
-    
-
+    width: 1136px;
+    padding: 0px;
+    gap: 16px;
 }
 
-.about h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    padding-bottom: 10px;
-}
+
 
 .about p {
     font-size: 1.6rem;
@@ -199,7 +226,6 @@ header {
     font-weight: 400;
     text-align: left;
     padding-bottom: 10px;
-
 }
 
 .skills {
@@ -209,11 +235,6 @@ header {
 
 }
 
-.skills h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    padding-bottom: 30px;
-}
 
 .skill-container {
     display: flex;
@@ -221,8 +242,9 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
-    padding: 30px;
+    max-width: 1136px;
+    padding: 0px;
+    gap: 32px;
 }
 
 .skills-contain {
@@ -248,8 +270,6 @@ header {
 }
 
 .hobbies h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
     padding-bottom: 30px;
 }
 
@@ -259,8 +279,8 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
-    padding: 30px;
+    max-width: 1136px;
+    gap: 32px;
 }
 
 .hobbies-contain {
@@ -269,7 +289,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
-    width: 100%;
+    width: 1136px;
 }
 
 .hobbies-contain__item img{
@@ -285,8 +305,6 @@ header {
 }
 
 .formation h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
     padding-bottom: 35px;
 }
 
@@ -296,18 +314,19 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
-    padding: 60px;
+    max-width: 1136px;
+    padding: 32px;
+    gap: 32px;
 }
 
 .formation-contain {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-width: 368px;
-height: 347px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 368px;
+    height: 347px;
 }
 
 .formation-contain__pic {
@@ -317,6 +336,8 @@ height: 347px;
     align-items: center;
     width: 368px;
     height: 286px;
+    padding: 16px;
+    gap: 10px;
     background-color: #ffffff;
 }
 
@@ -340,15 +361,14 @@ height: 347px;
 
 .proyect {
     flex-direction: column;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
     background: #F5F5F5;
+    padding: 32px;
+ 
 }
 
-.proyect h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    padding-bottom: 10px;
-}
+
 
 .proyect-container {
     display: flex;
@@ -356,8 +376,9 @@ height: 347px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
-    padding: 60px;
+    max-width: 1136px;
+    padding: 0px;
+    gap: 32px;
 }
 
 .proyect-contain {
@@ -365,7 +386,8 @@ height: 347px;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1136px;
+    gap: 16px;
 }
 
 .proyect-description {
@@ -373,7 +395,7 @@ height: 347px;
     flex-direction: column;
     justify-content: center;
     width: 25%;
-    padding-right: 30px;
+    gap: 8px;
 
 }
 
@@ -394,13 +416,8 @@ height: 347px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    gap: 10px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    
+    padding: 0px;
+    gap: 16px;
 }
 
 .proyect-description-btnContainer .btnRepo{
@@ -458,7 +475,7 @@ height: 347px;
     }
 
 .proyect-description__pic {
-    width: 65%;
+ 
     height: auto;
 }
 
@@ -473,6 +490,8 @@ height: 347px;
     flex-direction: row;
     justify-content: center;
     background-color: #EAF2FD;
+    padding: 64px;
+    gap: 10px;
 
 }
 
@@ -480,9 +499,10 @@ height: 347px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 60px;
+    padding: 64px 0px 0px;
+    gap: 16px;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1136px;
 }
 
 .contact-img {
@@ -494,10 +514,13 @@ height: 347px;
     margin-right: 5px;
 }
 
-.contact-contain h2 {
-    font-weight: 700;
-    font-size: 3.2rem;
-    line-height: 38px;
+.contact-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 656px;
 }
 
 .contact-contain p {
@@ -509,8 +532,10 @@ height: 347px;
 
 
 .contact-form {
-    padding: 2rem 1rem 0;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 656px;
 }
 
 .input {
@@ -529,18 +554,20 @@ height: 347px;
 	position: absolute;
 	top: 1.5rem;
 	transition: .25s ease;
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 19px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 16px;
 }
 
 .input-field {
 	border: 0;
-	z-index: 1;
-	background-color: transparent;
+	
+	background-color: #ffffff;
 	border-bottom: 2px solid #eee; 
 	font: inherit;
 	font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 20px;
 	padding: 1.6rem 0;
 }
 
