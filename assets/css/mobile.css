@@ -1,6 +1,72 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-    
+    .header-container {
+        padding: 16px 60px 16px 6px;
+    }
+    .presentation-container {
+        width: 360px;
+        
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
+    .presentation-contain {
+        width: 328px;
+        height: 148px;
+    }
+
+    .presentation-contain__p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .about {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .about p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .skill-container {
+        padding: 16px;
+        gap: 32px;
+    }
+
+    .skill-contain {
+        width: 328px;
+        gap: 16px;
+    }
+
+    .skill-contain__item img {
+        width: 156px;
+        height: 154px;
+    }
+
+    .hobbies-container {
+        padding: 16px;
+        gap: 32px;
+    }
+
+    .hobbies-contain {
+        width: 328px;
+        gap: 16px;
+    }
+
+    .hobbies-contain__item img {
+        width: 156px;
+        height: 154px;
+    }
+
+    .formation {
+    }
+
+    .formation-container {
+        gap: 16px;
+
+    }
 
 }
