@@ -29,25 +29,25 @@ const mensajesDeError = {
         valueMissing: "Este campo no puede estar vacio",
         typeMismatch: "El correo no es valido"
     },
+    asunto: {
+        valueMissing: "Este campo no puede estar vacio",
+        typeMismatch: "agrega un titulo al Asunto"
+    },
+    mensaje: {
+        valueMissing: "Este campo no puede estar vacio",
+        typeMismatch: "Escribe algo que quieras decirme."
+    }
 }
 
 const validadores = {
     nacimiento: input => validarNacimiento(input),
 }
 
-const inputNacimiento = document.querySelector('#birth');
-
-inputNacimiento.addEventListener('blur', (evento) => {
-    validarNacimiento(evento.target);
-});
 
 function mostrarMensajeDeError(tipoDeInput, input) {
     let mensaje = "";
     tipoDeErrores.forEach((error) => {
         if (input.validity[error]) {
-            console.log(tipoDeInput, error);
-            console.log(input.validity[error]);
-            console.log(mensajesDeError[tipoDeInput][error]);
             mensaje = mensajesDeError[tipoDeInput][error];
         }
     });
