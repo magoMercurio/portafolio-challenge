@@ -35,6 +35,10 @@
         padding: 16px;
         gap: 32px;
     }
+    .skills-contain {
+        width: 328px;
+
+    }
 
     .skill-contain {
         width: 328px;
